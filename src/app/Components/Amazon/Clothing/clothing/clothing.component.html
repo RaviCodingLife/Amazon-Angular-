@@ -1,0 +1,99 @@
+
+
+<!-- Carousel -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://m.media-amazon.com/images/I/61yFoAMUVJL._SX3000_.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.olbuz.com/blog/wp-content/uploads/2017/03/clothing-store.jpg" height="600px" width="1512px" class="d-block" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src=" https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/a20271c6-249f-480b-bcc7-1b150516e54e1651599573998-Dressberry_Desk.jpg" height="600px" width="1512px" class="d-block" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/3f6d1e2a-5ef6-4921-be5d-443a11b11d801651599573985-Dresses_Desk.jpg" height="600px" width="1512px" class="d-block" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/e384cb32-690c-4ccf-a6cb-61df36960bb21651599573972-Workwear_Desk.jpg" height="600px" width="1512px" class="d-block" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.toptrendsguide.com/wp-content/uploads/2020/04/Best-Online-Clothing-Stores-For-Men.jpg" height="600px" width="1512px" class="d-block" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  
+
+
+
+
+<!-- Clothing -->
+
+<div class="container ">
+    <div class="row" id="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <p class="display-1 text-center text-primary"><b><u>Clothing</u></b></p>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+    <div class="row mt-5">
+                
+        <div class="col-6">
+            <button class="btn btn-outline-primary px-5" *ngIf="showone"
+            (click)="showData()" id="b1">
+                Show Men,s Clothing</button>
+            <button class="btn btn-outline-danger px-5" *ngIf="disableone "
+            (click)="showText()" id="b1">
+                Hide Men,s Clothing </button>
+        </div>
+
+        <div class="col-6">
+            <button class="btn btn-outline-info px-5" *ngIf="showone1"
+            (click)="showData1()" id="b2">
+                Show Women,s Clothing</button>
+            <button class="btn btn-outline-success px-5" *ngIf="disableone1 "
+            (click)="showText1()" id="b2">
+                Hide Women,s Clothing</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" *ngIf="show">
+            <app-mensclothing></app-mensclothing>
+        </div>
+
+        <div class="row" *ngIf="show1">
+            <div class="col">
+              <app-womenclothing></app-womenclothing>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+

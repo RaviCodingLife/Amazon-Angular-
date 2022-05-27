@@ -1,0 +1,36 @@
+
+<div class="container">
+    <p class="display-1 text-center text-danger">To-Do List with Animation</p>
+    <div class="row" >
+        <div class="col-3"></div>
+        <div class="col-6" id="col">
+            <p class="display-4 text-center text-primary" id="p">Add New Items</p>
+
+            <div class="additem">
+                <div class="row" id="row1">
+                    <div class="col-8 mt-5 ">
+                        <input type="text" placeholder="!! Enter AnyThing !!"
+                            [(ngModel)]="newitem" class="form-control" id="input">
+                    </div>
+
+                    <div class="col-4 mt-5">
+                        <button class="btn btn-outline-danger px-5" (click)="pushitem()">Add Me</button>
+                    </div>
+                </div>
+                
+
+
+                
+            </div>
+
+            <ul type="none" class="text-center me-2" style="align-items: center; justify-content: center;">
+                <li @FadeinFadeOut *ngFor="let item of items; let i=index" id="li">
+                    {{item}}
+
+                        <span id="span" (click)="removeitem(i)">X</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

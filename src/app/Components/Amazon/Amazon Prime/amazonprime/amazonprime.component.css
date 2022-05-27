@@ -1,0 +1,11 @@
+.container{
+    margin-top: 100px;
+}
+#col{
+    background-color: #385573;
+    width:"635px" ;
+    height:"350px";    
+}
+.row a{
+    text-decoration: none;
+}

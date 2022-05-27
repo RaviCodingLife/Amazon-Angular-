@@ -1,0 +1,29 @@
+.container{
+    margin-top: 110px;
+}
+.container1{
+    border: 1px solid rgb(183, 177, 177);
+    height: 110px;
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#foot{
+    background-color: rgb(183, 177, 177);
+    height: 400px;
+    
+}
+#col{
+    margin-top: 80px;
+    border: 1px solid rgb(183, 177, 177);
+    height: 250px;
+    width: 500px;
+    background-color: white; 
+    border-radius: 10px;
+}
+#btn{
+    border: 1px solid rgb(183, 177, 177);
+}
+.col-3 a:hover{
+    color: orangered;
+}

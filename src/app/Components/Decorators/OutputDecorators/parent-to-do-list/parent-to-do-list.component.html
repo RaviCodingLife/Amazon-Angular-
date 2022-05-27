@@ -1,0 +1,18 @@
+<p class="display-1 text-danger text-center">Output Decorators</p>
+<p class="display-3 text-primary text-center">To-Do List</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+
+        <div class="col-4">
+            <label class="display-6 text-success" for="item-input">Add New Item:-</label>
+            <input type="text" placeholder="Add New Items" id="item-input"
+            class="form-control" #newItem>
+
+            <button (click)="addNewItem(newItem.value)" class="btn btn-outline-danger mt-4 px-5">Add Items</button>
+        </div>
+
+        <div class="col-4"></div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<h1 style="text-align: center;color: blueviolet;"></h1>
+
+<br><br><br><br>
+
+
+
+<div *ngFor="let car of Cars" [ngSwitch]="car.color">
+    <div *ngSwitchCase="'blue'"
+        class="blue">
+      {{ car.name }} {{car.age}} ({{ car.color }})
+    </div>
+    <div *ngSwitchCase="'yellow'"
+        class="yellow">
+      {{ car.name }} {{car.age}} ({{ car.color }})
+    </div>
+    <div *ngSwitchCase="'silver'"
+        class="silver">
+      {{ car.name }} {{car.age}} ({{ car.color }})
+    </div>
+    <div *ngSwitchCase="'red'"
+        class="red">
+      {{ car.name }} {{car.age}} ({{ car.color }})
+    </div>
+    <div *ngSwitchDefault
+        class="text-warning">
+      {{ car.name }} {{car.age}} ({{ car.color }})
+    </div>
+  </div>`

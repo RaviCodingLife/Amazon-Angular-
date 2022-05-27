@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="text-success">User Details are Shown Below</h3>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vitae illo aliquid non
+                adipisci itaque iure error minima at quos assumenda, quia fuga sint molestias blanditiis autem officiis
+                illum reprehenderit dicta, molestiae esse voluptates et libero. Voluptatibus quibusdam illo ipsa nulla
+                excepturi animi fugit sit reiciendis, voluptas aut, quos deserunt?</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <button class="btn btn-outline-success px-5" (click)="fetch()">Show User Details</button>
+        </div>
+    </div>
+
+    <div class="row mt-5" *ngIf="hideRadio">
+        <div class="col-4">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="all" 
+                checked (change)="filter($event)">
+                <label class="form-check-label" >
+                  All
+                </label>
+              </div>
+        </div>
+
+        <div class="col-4">
+            <div class="form-check">
+                <!-- In angular we have to use $ symbol passes the event object -->
+                <input class="form-check-input" type="radio" name="gender" value="male"
+                (change)="filter($event)">
+                <label class="form-check-label" >
+                  Male
+                </label>
+        </div>
+    </div>
+
+        <div class="col-4">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="female"
+                (change)="filter($event)">
+                <label class="form-check-label" >
+                 Female
+                </label>
+        </div>
+    </div>
+</div>
+
+    <div class="row mt-5">
+        <div class="col-4 mt-3" *ngFor="let user of userDetails">
+            <div class="card">
+                <div class="card-header">
+                    <img [src]="user.picture.large" class="img-fluid" alt="">
+                </div>
+
+                <div class="card-body">
+                    <h4>{{user.name.title}} {{user.name.first}} {{user.name.last}}</h4>
+                    <p class="lead">Gender:-{{user.gender}}</p>
+                    <button class="btn btn-danger px-5">Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

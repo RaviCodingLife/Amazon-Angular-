@@ -1,0 +1,23 @@
+
+
+<div class="container mt-5">
+    <p class="display-1 text-danger">Women's Clothing</p>
+    <div class="row">
+        <div class="col-4 mt-5" *ngFor="let WomenC of WomensClothing">
+            <div class="card" style="width: 25rem; height: 77rem;">
+                <img [src]="WomenC.image" class="card-img-top" height="500px" width="500px" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-5">{{WomenC.title}}</h5>
+                  <p class="card-text mt-4">{{WomenC.description}} <br><br>
+                    <span class="text-dark"><b>Price:-</b> </span>{{WomenC.price  |   currency:'Rs'}} <br><br>
+                    <span class="text-dark"><b>Rating:-</b></span>{{WomenC.rating.rate}}
+
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+

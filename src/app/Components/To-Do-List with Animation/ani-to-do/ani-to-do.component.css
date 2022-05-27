@@ -1,0 +1,26 @@
+#col{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#row1{
+    border-top: 2px solid black ;
+}
+#p{
+    margin-top: 10px;
+    background-color: red;
+    height:100px;
+}
+#li{
+    margin-top: 20px;
+    border: 1px solid rgb(216, 210, 210);
+
+}
+#span{
+ margin-left: 520px;
+ margin-top: 20px;
+ border: 1px solid red;
+ border-radius: 10px;
+ background-color: red;
+ color: white;
+ border-width: 10px;
+}

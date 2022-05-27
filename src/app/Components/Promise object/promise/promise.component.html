@@ -1,0 +1,43 @@
+<p class="display-1 text-center text-danger">This User Data Fetch Through API</p>
+<br><br><br>
+
+<section class="container">
+<div class="row">
+    <div class="col-4 mt-5" *ngFor="let item of UserData">
+        <div class="card">
+            <div class="card-header bg-primary text-center text-white">
+                <h4 class="mt-5">User Name:-</h4>
+                <h3 class="mt-2 text-dark">{{item.id}} . {{item.name}}</h3>
+            </div>
+            <div class="card-body bg-danger text-center text-white">
+                <h4>User UserName:-</h4>
+                <h4 class="text-dark">{{item.username}}</h4>
+
+                <h4>User Website:-</h4>
+                <h4 class="text-dark">{{item.website}}</h4>
+
+                <h4>User Email Id:-</h4>
+                <h4 class="text-dark">{{item.email}}</h4>
+
+                <h4>User Address:-</h4>
+                <h4 class="text-dark">{{item.address.city}}</h4>
+
+                <h4>User Street:-</h4>
+                <h4 class="text-dark">{{item.address.street}}</h4>
+
+                <h4>User ZipCode:-</h4>
+                <h4 class="text-dark">{{item.address.zipcode}}</h4>
+
+                <h4>User Contact No:-</h4>
+                <h4 class="text-dark">{{item.phone}}</h4>
+
+                <h4>User Company:-</h4>
+                <h4 class="text-dark">{{item.company.name}}</h4>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+    

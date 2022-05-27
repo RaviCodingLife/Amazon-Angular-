@@ -1,0 +1,13 @@
+<div style="text-align:center">
+    <p class="display-1">Welcome</p>
+    .<!--Truncated for brevity -->
+<button (click)="getData()">Fetch Data</button>
+
+<!--The code to display images -->
+<div *ngFor="let image of data" style="text-align:center">
+<h3>
+   {{ image.name }} | {{ image.username }} | {{ image.email }}
+ </h3>
+ <img width="200" alt="thumbnail" [src]="image.thumbnailUrl">
+</div>
+</div>

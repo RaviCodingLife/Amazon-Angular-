@@ -1,0 +1,22 @@
+<div class="container m-3">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h1>Server Component</h1>
+                </div>
+
+                <div class="card-body">
+                    <input type="text" class="form-control" placeholder="Enter Text" #server>
+                    <button class="btn btn-outline-danger mt-2 px-5" (click)="getDatafromServer(server)">Send</button>
+                </div>
+
+                <div class="card-footer">
+                    <p class="lead text-success">Massage By Client Comp:-</p>
+                    <p class="lead text-primary">{{this.clientData}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

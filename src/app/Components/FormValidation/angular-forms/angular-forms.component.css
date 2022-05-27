@@ -1,0 +1,6 @@
+.alert{
+    color: black;
+}
+.alert-danger{
+    background-color: red;
+}

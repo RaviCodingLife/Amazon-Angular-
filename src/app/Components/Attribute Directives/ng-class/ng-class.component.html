@@ -1,0 +1,15 @@
+<h1 style="text-align: center; color: blueviolet;">Attribute Directives</h1>
+<h1 style="text-align: center; color: blueviolet;">[ngClass]</h1>
+
+<br><br><br><br>
+
+
+
+<ol *ngFor="let person of people">
+  <li [ngClass]="{
+    'text-success':person.country === 'UK',
+    'text-primary':person.country === 'USA',
+    'text-danger':person.country === 'HK'
+  }">{{ person.name }} ({{ person.country }})
+  </li>
+</ol>
